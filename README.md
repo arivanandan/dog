@@ -5,8 +5,8 @@ The idealogy driving how the code is structured in this project is
 - DRY
   - only if you are really really sure the code will be reused, split it
   - or isolate the function / hook when you need to write same logic somewhere else
-- SRP
-  - single responsibility as long as it's small
+- Functional SRP
+  - single responsibility as long as it's small and done by product function rather than code function - that is, we split by real world functions such as DogList, DogModal instead of splitting by RenderCode, DataCode, StylesCode.
   - when it gets big, we split it but we want to keep everything in one place if we can
 - co-location principle
   - you keep everything you need in one place, you read it top-down it makes sense without having to go anywhere else
